@@ -19,10 +19,8 @@
   "scripts": {
     "analyze": "custom-elements-manifest analyze --litelement --globs \"src/**/*.ts\" --outdir dist",
     "analyze:watch": "custom-elements-manifest analyze --litelement --globs \"src/**/*.ts\" --outdir dist --watch",
-    "build": "npm run compile && npm run analyze",
+    "build": "tsc --project tsconfig.build.json && npm run analyze",
     "clean": "rimraf dist",
-    "compile": "tsc",
-    "compile:watch": "tsc --watch",
     "lint": "npm run lint:lit-analyzer && npm run lint:stylelint && npm run lint:eslint",
     "lint:eslint": "eslint .",
     "lint:eslint:fix": "eslint --fix .",
@@ -32,7 +30,7 @@
     "lint:stylelint:fix": "stylelint --fix src",
     "test": "vitest --run",
     "test:watch": "vitest",
-    "type-check": "tsc --project tsconfig.quality.json"
+    "type-check": "tsc --project tsconfig.json"
   },
   "dependencies": {
     "lit": "^3.1.2"

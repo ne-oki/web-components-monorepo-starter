@@ -1,9 +1,0 @@
-{
-  "extends": "@web-components-monorepo-starter/base-configs/tsconfig.react.json",
-  "compilerOptions": {
-    "noEmit": true,
-    "outDir": "dist"
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
-}

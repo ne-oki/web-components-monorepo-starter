@@ -3,7 +3,7 @@ module.exports = {
   root: true,
   extends: ['@web-components-monorepo-starter/eslint-config/base.js'],
   parserOptions: {
-    project: './tsconfig.quality.json',
+    project: './tsconfig.json',
     tsconfigRootDir: __dirname,
   },
 }

@@ -17,10 +17,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run compile",
+    "build": "tsc --project tsconfig.build.json",
     "clean": "rimraf dist",
-    "compile": "tsc",
-    "compile:watch": "tsc --watch",
     "lint": "eslint .",
     "lint:eslint:fix": "eslint --fix .",
     "lint:fix": "npm run lint:eslint:fix"
