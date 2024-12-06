@@ -24,7 +24,7 @@
     "lint:fix": "npm run lint:eslint:fix"
   },
   "dependencies": {
-    "@lit/react": "^1.0.3",
+    "@lit/react": "^1.0.6",
     "@web-components-monorepo-starter/hello-world": "*"
   },
   "devDependencies": {
@@ -33,7 +33,7 @@
     "@web-components-monorepo-starter/eslint-config": "*",
     "eslint": "^8.57.0",
     "rimraf": "^6.0.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.7.2"
   },
   "peerDependencies": {
     "react": "^18.0.0"
